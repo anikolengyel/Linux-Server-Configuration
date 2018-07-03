@@ -3,7 +3,9 @@
 # Server Information
 
 URL: http://52.41.130.236.xip.io/
+
 Port: 2200
+
 Public IP: 52.41.130.236
 
 # Introduction
