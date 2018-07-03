@@ -1,10 +1,5 @@
 # Linux-Server-Configuration
 
-```
-if (isAwesome){
-  return true
-}
-```
 # Server Information
 
 URL: http://52.41.130.236.xip.io/
@@ -85,5 +80,20 @@ sudo adduser grader
 ```
 sudo vim /etc/sudoers.d/grader
 ```
+
+- Edit and add grader ```grader ALL=(ALL) NOPASSWD:ALL```.
+- Create an SSH key par for grader. Run ```ssh-keygen``` on local machine and save the files.
+- In the virtual machine, create a new directioy .ssh and the copy the content of the epub file
+from the local machine into a new file (authorized_keys).
+- Run ```chmod 700 .ssh``` and ```chmod 644 .ssh/authorized_keys```.
+- Log in as grader.
+
+__Change Timezone to UTC__
+
+- Configure local timezon to UTC.
+- Run ```sudo dpkg-reconfigure tzdata```.
+- Choose None of the above and click on UTC.
+
+__Installations__
 
 
