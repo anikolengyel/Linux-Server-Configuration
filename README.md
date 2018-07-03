@@ -145,26 +145,40 @@ __Populate the database__
 - Activate the virualenvironment and run ```data_creating.py```.
 - Restart Apache.
 
-The most important sources I used during my project:
+__Create the wgi File__
 
-- Some general for terminal using and troubleshooting: 
+- Under /var/www/ItemCatalog created ItemCatalog.wsgi and added the following lines:
 
+```
+activate_this = '/var/www/ItemCatalog/venv/bin/activate_this.py'
+execfile(activate_this, dict(__file__=activate_this))
+
+#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/ItemCatalog/")
+
+from __init__ import app as application
+application.secret_key = 'E-VvYUhdCpuva814-tKc5HsZ'
+```
+- Restart Apache. 
+
+__Sources__
+
+General for terminal using and troubleshooting: 
 https://help.ubuntu.com/community/UsingTheTerminal
-https://askubuntu.com/questions/217893/how-to-delete-a-non-empty-directory-in-terminal
 https://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
 
-- Timezone:
-
+Timezone:
 https://askubuntu.com/questions/3375/how-to-change-time-zone-settings-from-the-command-line
 
-- Working with gitHub:
-
+Working with gitHub:
 https://services.github.com/on-demand/github-cli/clone-repo-cli
 https://wiki.paparazziuav.org/wiki/Github_manual_for_Ubuntu
 
-- Working with postgresql:
-
+Working with postgresql:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
 https://help.ubuntu.com/community/PostgreSQL
 
-- Udacity discussions and lessons
+Udacity discussions and lessons
