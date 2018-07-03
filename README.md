@@ -148,18 +148,22 @@ __Populate the database__
 The most important sources I used during my project:
 
 - Some general for terminal using and troubleshooting: 
+
 https://help.ubuntu.com/community/UsingTheTerminal
 https://askubuntu.com/questions/217893/how-to-delete-a-non-empty-directory-in-terminal
 https://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
 
 - Timezone:
+
 https://askubuntu.com/questions/3375/how-to-change-time-zone-settings-from-the-command-line
 
 - Working with gitHub:
+
 https://services.github.com/on-demand/github-cli/clone-repo-cli
 https://wiki.paparazziuav.org/wiki/Github_manual_for_Ubuntu
 
 - Working with postgresql:
+
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
 https://help.ubuntu.com/community/PostgreSQL
 
