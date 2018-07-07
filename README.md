@@ -139,15 +139,16 @@ Created an ItemCatalog.conf file in /etc/apache2/sites-available and wrote the f
 ```
 __Configure PostgreSQL__
 
-- As postgres user create and configure database.
-- Change the engine in ```__init__.py``` and ```database_setup.py``` to ```postgresql://catalog:catalog@localhost/catalog```.
+- Login as postgres user and get into postgreSQL by typing psql
+- Create a new database and user and give the user the permission to the database
 
 __Populate the database__
 
+- Change the engine in ```__init__.py``` and ```database_setup.py``` to ```postgresql://catalog:catalog@localhost/catalog```.
 - Activate the virualenvironment and run ```data_creating.py```.
 - Restart Apache.
 
-__Create the wgi File__
+__Create the wsgi File__
 
 - Under /var/www/ItemCatalog created ItemCatalog.wsgi and added the following lines:
 
@@ -162,7 +163,7 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/ItemCatalog/")
 
 from __init__ import app as application
-application.secret_key = 'E-VvYUhdCpuva814-tKc5HsZ'
+application.secret_key = 'XXXXXXXXXX'
 ```
 - Restart Apache. 
 
