@@ -137,10 +137,6 @@ Created an ItemCatalog.conf file in /etc/apache2/sites-available and wrote the f
                 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
-__Configure PostgreSQL__
-
-- Login as postgres user and get into postgreSQL by typing psql
-- Create a new database and user and give the user the permission to the database
 
 __Populate the database__
 
