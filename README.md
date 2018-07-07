@@ -165,9 +165,10 @@ application.secret_key = 'XXXXXXXXXX'
 
 __Sources__
 
-General for terminal using and troubleshooting: 
+General help for troubleshooting: 
 https://help.ubuntu.com/community/UsingTheTerminal
 https://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
+https://stackoverflow.com/questions/27211158/no-passwd-entry-for-user-postgres-error
 
 Timezone:
 https://askubuntu.com/questions/3375/how-to-change-time-zone-settings-from-the-command-line
