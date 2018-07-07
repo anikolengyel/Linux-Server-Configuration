@@ -33,7 +33,7 @@ We used [Amazon Lightsail] (https://aws.amazon.com/lightsail/) to set up a Linux
 
 __Server Configurations__
 
-- Update and upgrade all packages to make the serer more secure
+- Update and upgrade all packages to make the server more secure
 
 ```
 sudo apt-get update
@@ -59,6 +59,8 @@ sudo ufw deny 22
 sudo ufw enable
 ```
 - After that run ```sudo ufw status``` to check the opened ports and the ufw activity.
+
+- On Amazon Lightsail change the firewall settings and ports according to the setting requirements.
 
 __Create User grader__
 
