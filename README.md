@@ -149,8 +149,6 @@ __Create the wsgi File__
 - Under /var/www/ItemCatalog created ItemCatalog.wsgi and added the following lines:
 
 ```
-activate_this = '/var/www/ItemCatalog/venv/bin/activate_this.py'
-execfile(activate_this, dict(__file__=activate_this))
 
 #!/usr/bin/python
 import sys
