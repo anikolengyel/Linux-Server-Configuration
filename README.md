@@ -2,11 +2,11 @@
 
 # Server Information
 
-URL: http://52.41.130.236.xip.io/
+URL: http://54.189.140.113.xip.io/
 
 Port: 2200
 
-Public IP: 52.41.130.236
+Public IP: 54.189.140.113
 
 # Introduction
 
